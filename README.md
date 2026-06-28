@@ -81,11 +81,12 @@ Supported categories include:
 
 | Route | Description |
 |-------|-------------|
-| `/` | Home page with project overview and navigation |
-| `/todos` | Todo management page. View, add, edit, delete, search, filter and manage todos. |
+| `/` | Home page with project overview and navigation. |
+| `/todos` | View, add, edit, delete, search, filter, and manage todos. |
+| `/todo?id=<id>` | Displays detailed information for a single todo using the todo ID as a query parameter. |
 | `/about` | Information about the application and technologies used. |
 
-> **Note:** The application is built as a multi-page React application using React Router.
+> The application is built as a multi-page React application using React Router.
 
 # Backend Functionalities
 
