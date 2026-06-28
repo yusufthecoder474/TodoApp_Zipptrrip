@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function TodoItem({
@@ -68,14 +69,30 @@ function TodoItem({
         <>
           <div
             style={{
-              cursor: "pointer",
               color: todo.completed ? "gray" : "inherit",
               opacity: todo.completed ? 0.7 : 1,
             }}
-            onClick={() => onToggle(todo)}
           >
             <strong>
-              {todo.completed ? "✅" : "⬜"} {todo.title}
+              <span
+                onClick={() => onToggle(todo)}
+                style={{
+                  cursor: "pointer",
+                  marginRight: "6px",
+                }}
+              >
+                {todo.completed ? "✅" : "⬜"}
+              </span>
+
+              <Link
+                to={`/todo?id=${todo.id}`}
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                }}
+              >
+                {todo.title}
+              </Link>
             </strong>
 
             {todo.dueDate && (
