@@ -77,6 +77,16 @@ Supported categories include:
 
 ---
 
+## Pages
+
+| Route | Description |
+|-------|-------------|
+| `/` | Home page with project overview and navigation |
+| `/todos` | Todo management page. View, add, edit, delete, search, filter and manage todos. |
+| `/about` | Information about the application and technologies used. |
+
+> **Note:** The application is built as a multi-page React application using React Router.
+
 # Backend Functionalities
 
 The backend is built using **Node.js** and **Express.js**.
